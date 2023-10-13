@@ -1,11 +1,21 @@
 import Rock from "../assets/icon-rock.svg"
 import Paper from "../assets/icon-paper.svg"
 import Scissors from "../assets/icon-scissors.svg"
+import ChooseWins from "../components/ChooseWins";
 
 
+type Main = {title: string}
+const Main = () => {
 
-const main = () => {
+    const handleChoise =() =>{
+
+    }
+    const handleGo =() =>{
+
+    }
+    
     return (  
+       
         <main className="main">
         <div className="main_score-container">
             <div className="main_name-block">
@@ -13,10 +23,8 @@ const main = () => {
             <h1>PAPER</h1>
             <h1>SCISORS</h1>
             </div>
-            <div>
-                <h3>SCORE</h3>
-                <h1>{/* actial score goes here with logic*/}</h1>
-            </div>
+            <ChooseWins/>
+            <button>Go!</button>
             <div className="main_rps">
                 <button className="main_paper">
                     <img src={Paper}/>
@@ -31,7 +39,6 @@ const main = () => {
         </div>  
 
         </main>
-    );
+);
 }
- 
-export default main;
+export default Main;
